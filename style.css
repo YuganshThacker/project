@@ -1,12 +1,20 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family:'poppins',sans-serif;
+}
+body{
+  background: #ffff;
+}
 nav {
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
+    padding: 12px;
   }
   
   .logo {
     margin-right: 40px; 
-    
   }
   
 
@@ -17,8 +25,19 @@ nav {
     width: 20px;
     font-size: 20px;
   }
+
   .container{
     background-color:#ecdbd7 ;
   }
-  
-  
+  #id{
+    font-style: poppins;
+  }
+  #table{
+    width: 35px;
+  }
+  #table2{
+    margin-left: 20px;
+    width: 100%;
+    margin-top: 2px;
+    font-weight: bold;
+  }
