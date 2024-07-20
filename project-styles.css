@@ -15,7 +15,7 @@ body, html {
 
 .container {
     text-align: center;
-    background: #ecdbd7f9;
+    background:#DAD1C6;
     height: 280px;
     width: 600px;
     border-radius: 20px;
@@ -54,7 +54,7 @@ img {
 
 .explore-button:hover {
     transition: 0.3s;
-    transform: translateY(-5px);
+    transform: translateY(-4px);
     border-color: #333;
     
 }
@@ -62,6 +62,13 @@ img {
 .explore-button:active {
     background-color: #bb3302e1;
 }
-@media only screen and (max-width: 1024px) {
+
+
+
+@media only screen and (max-width: 600px){
+    .welcome-message{
+        height: 40px;
+        font-size: 30px;
+    }
     
 }
