@@ -10,12 +10,12 @@ body, html {
     font-family: 'Arial', sans-serif;
     color: #333;
     background-image: url(images/background.png);
-    background-size:cover;
+    background-size: cover;
 }
 
 .container {
     text-align: center;
-    background:#DAD1C6;
+    background: #dad1c6;
     height: 280px;
     width: 600px;
     border-radius: 20px;
@@ -24,7 +24,7 @@ body, html {
 }
 
 .welcome-message {
-    margin-top: 7apx;
+    margin-top: 7px;
     text-align: center;
     font-size: 2.5em;
     color: #c60215;
@@ -48,7 +48,6 @@ img {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 2ms ease;
-    
     box-shadow: 0px 0px 6px rgb(0, 0, 0);
 }
 
@@ -56,7 +55,6 @@ img {
     transition: 0.3s;
     transform: translateY(-4px);
     border-color: #333;
-    
 }
 
 .explore-button:active {
@@ -64,11 +62,27 @@ img {
 }
 
 
-
-@media only screen and (max-width: 600px){
-    .welcome-message{
-        height: 40px;
-        font-size: 30px;
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        height: auto;
+        padding: 20px;
     }
-    
+
+    .welcome-message {
+        font-size: 1.8em;
+        margin-top: 10px;
+    }
+
+    .explore-button {
+        width: 100px;
+        height: 45px;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    img {
+        height: 70px;
+        width: 70px;
+    }
 }
