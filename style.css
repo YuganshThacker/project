@@ -4,17 +4,29 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-  background: #ffff;
+  background: #E4C59E;
 }
 nav {
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
     padding: 12px;
+    background-color: #803D3B;
+
+    
   }
+
+  h1{
+    margin-left: -50px;
+    color: beige;
+    font-size: 25px;
+  }
+  
+
   
   .logo {
     margin-right: 40px; 
+    
   }
   
 
@@ -37,18 +49,23 @@ nav {
   #table{
     width: 35px;
   }
-  #table2{
+ #table2{
     margin-left: 20px;
     width: 100%;
     margin-top: 2px;
     font-weight: bold;
   }
   .nav2{
-    background-color: #FECE4C;
+    background-color: #AF8260;
   }
   .box{
     display: flex;
     flex-wrap: wrap;
+    margin-left: 0px;
+    justify-content: space-evenly;
+    
+  
+    
     
   }
   .box1{
@@ -61,7 +78,7 @@ nav {
     border-radius: 9%;
     margin-left: 10px;
     justify-content: center;
-    
+    border-style: solid;
     
     
     
@@ -75,6 +92,8 @@ nav {
     border-radius: 9%;
     margin-left: 10px;
     justify-content: center;
+    border-style :solid;
+    
     
   }
   .box3{
@@ -86,6 +105,7 @@ nav {
     border-radius: 9%;
     margin-left: 10px;
     justify-content: center;
+    border-style: solid;
     
 
     
@@ -99,6 +119,7 @@ nav {
     border-radius: 9%;
     margin-left: 10px;
     justify-content: center;
+    border-style: solid;
     
   }
   .box5{
@@ -110,6 +131,7 @@ nav {
     border-radius: 9%;
     margin-left: 10px;
     justify-content: center;
+    border-style: solid;
     
   }
   .box6{
@@ -121,6 +143,8 @@ nav {
     border-radius: 9%;
     margin-left: 10px;
     justify-content: center;
+    border-style: solid;
+    
 
     
   }
@@ -130,6 +154,7 @@ nav {
   }
   @media only screen and (max-width: 600px){
     .box{
-      margin-left: 45px;
+      margin-left: 0px;
+      
     }
   }
