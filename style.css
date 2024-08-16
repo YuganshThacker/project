@@ -58,26 +58,29 @@ h1{
   justify-content: space-between; 
   gap: 20px; 
   margin: 20px;
+  
 }
 .box1, .box2, .box3, .box4, .box5, .box6 {
   display: flex;
+  flex-direction: column; 
+  justify-content: flex-end;
+  align-items: center; 
   margin-top: 20px;
   width: 150px;
   height: 175px;
   background-color: #FECE4C;
   border-radius: 9%;
-  justify-content: center;
   border-style: solid;
+  padding-bottom: 10px; 
 }
+
 
 
 @media only screen and (max-width: 600px) {
   .box {
     justify-content: center; 
     gap: 15px; 
+    
   }
-  .box1, .box2, .box3, .box4, .box5, .box6 {
-    width: 130px; 
-    height: 150px;
-  }
+
 }
