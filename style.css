@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   font-family: 'Poppins', sans-serif;
+  -webkit-tap-highlight-color: transparent; /* Disable tap highlight on mobile */
 }
 
 body {
@@ -78,10 +79,9 @@ h1 {
   margin-right: 15px;
   text-decoration: none;
   color: initial;
-
-  
 }
-.box2, .box4 , .box6{
+
+.box2, .box4, .box6 {
   display: flex;
   margin-top: 20px;
   width: 150px;
@@ -93,28 +93,30 @@ h1 {
   margin-left: 15px;
   text-decoration: none;
   color: initial;
-
-
 }
 
 #b {
   margin-top: 140px;
 }
-*:focus {
-  outline: none;
-}
 
-.box1:focus, .box2:focus, .box3:focus, .box4:focus, .box5:focus, .box6:focus {
+/* Remove blue outline and custom outline */
+.box1:focus, .box2:focus, .box3:focus, 
+.box4:focus, .box5:focus, .box6:focus {
   outline: none; 
   box-shadow: none; 
 }
 
-
-.box1:focus-visible, .box2:focus-visible, .box3:focus-visible, 
-.box4:focus-visible, .box5:focus-visible, .box6:focus-visible {
-  box-shadow: 0 0 0 4px #FFD700; 
+.box1:active, .box2:active, .box3:active, 
+.box4:active, .box5:active, .box6:active {
+  outline: none;
+  box-shadow: none;
+  border-color: inherit; /* Keep the original border color */
 }
 
+.box1:hover, .box2:hover, .box3:hover, 
+.box4:hover, .box5:hover, .box6:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
 
 @media only screen and (max-width: 600px) {
   .box {
@@ -129,28 +131,16 @@ h1 {
     height: 160px; 
     text-decoration: none;
     color: initial;
-
   }
 
   #b {
     margin-top: 130px; 
   }
+}
 
- 
+
 *:focus {
   outline: none;
-}
-
-.box1:focus, .box2:focus, .box3:focus, .box4:focus, .box5:focus, .box6:focus {
-  outline: none; 
-  box-shadow: none; 
-}
-
-
-.box1:focus-visible, .box2:focus-visible, .box3:focus-visible, 
-.box4:focus-visible, .box5:focus-visible, .box6:focus-visible {
-  box-shadow: 0 0 0 4px #FFD700; 
-}
-
-
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent; 
 }
