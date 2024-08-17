@@ -58,11 +58,9 @@
   .nav2 {
     background-color: #AF8260;
   }
-      #lunch{
-        margin-top: 20px;
-        margin-left: 2px;
-        font-weight: 600;
-        font-size: 20px;
-  
-      }
+  h2{
+    margin-top: 15px;
+    font-size: 20px;
+    margin-left: 10px;
+  }
       
