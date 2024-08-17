@@ -102,11 +102,13 @@ h1 {
   .box {
     margin-left: 0px;
     justify-content: center;
+    text-decoration: none;
   }
   
   .box1, .box2, .box3, .box4, .box5, .box6 {
     width: 140px; 
     height: 160px; 
+    text-decoration: none;
   }
 
   #b {
