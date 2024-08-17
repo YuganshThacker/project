@@ -1,6 +1,7 @@
+/* Global Styles */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -59,6 +60,7 @@ h1 {
   background-color: #AF8260;
 }
 
+/* Box Container */
 .box {
   display: flex;
   flex-wrap: wrap;
@@ -69,12 +71,12 @@ h1 {
   color: initial;
 }
 
+/* Individual Boxes */
 .box1, .box2, .box3, .box4, .box5, .box6 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 20px;
   width: 170px;
   height: 200px;
   background-color: #FECE4C;
@@ -83,12 +85,27 @@ h1 {
   padding-bottom: 10px;
   text-decoration: none;
   color: initial;
+  transition: width 0.3s ease, height 0.3s ease;
 }
 
+/* Mobile Styles */
 @media only screen and (max-width: 600px) {
   .box {
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
     margin: 10px; 
+  }
+
+  .box1, .box2, .box3, .box4, .box5, .box6 {
+    width: 140px;
+    height: 160px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+  #id {
+    margin-left: 0;
+    text-align: center;
   }
 }
