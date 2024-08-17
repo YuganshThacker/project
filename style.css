@@ -77,6 +77,8 @@ h1 {
   border-style: solid;
   margin-right: 15px;
   text-decoration: none;
+  color: initial;
+
   
 }
 .box2, .box4 , .box6{
@@ -90,6 +92,8 @@ h1 {
   border-style: solid;
   margin-left: 15px;
   text-decoration: none;
+  color: initial;
+
 
 }
 
@@ -103,12 +107,15 @@ h1 {
     margin-left: 0px;
     justify-content: center;
     text-decoration: none;
+    color: initial;
   }
   
   .box1, .box2, .box3, .box4, .box5, .box6 {
     width: 140px; 
     height: 160px; 
     text-decoration: none;
+    color: initial;
+
   }
 
   #b {
