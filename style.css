@@ -63,6 +63,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-decoration: none;
 }
 
 .box1, .box3, .box5 {
@@ -75,6 +76,7 @@ h1 {
   justify-content: center;
   border-style: solid;
   margin-right: 15px;
+  text-decoration: none;
   
 }
 .box2, .box4 , .box6{
@@ -87,6 +89,7 @@ h1 {
   justify-content: center;
   border-style: solid;
   margin-left: 15px;
+  text-decoration: none;
 
 }
 
@@ -98,12 +101,12 @@ h1 {
 @media only screen and (max-width: 600px) {
   .box {
     margin-left: 0px;
-    justify-content: center; 
+    justify-content: center;
   }
   
   .box1, .box2, .box3, .box4, .box5, .box6 {
-    width: 140px;
-    height: 160px;
+    width: 140px; 
+    height: 160px; 
   }
 
   #b {
