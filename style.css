@@ -144,3 +144,7 @@ h1 {
   box-shadow: none;
   -webkit-tap-highlight-color: transparent; 
 }
+
+#search_bar{
+  /* display: none; */
+}
