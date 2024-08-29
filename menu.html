@@ -15,8 +15,8 @@
                 <img src="images/menu.icon.png" class="logo" alt="Menu Logo" style="width: 50px; height: auto;">
                 <h1  style="margin-left: 6px;">Menu</h1>
                 <ul>
-                    <i style="color: beige;" class="fa-solid fa-magnifying-glass"></i>
-                    <i style="color: beige;" class="fa-solid fa-bars"></i>
+                    <i id="search_button" style="color: beige;" class="fa-solid fa-magnifying-glass"></i>
+                    <i id="menu_button"style="color: beige;" class="fa-solid fa-bars"></i>
                    
                 </ul>
             </nav>
@@ -24,53 +24,79 @@
             <nav class="nav2">
                 <img id="table" src="images/table.png" alt="table">
                 <p id="table2">Table no</p>
+                <input type="text" id="search_bar" placeholder="search time..." onkeyup="searchFun()">
             </nav>
         </div>
     </div>
     <h2 id="id">Categories</h2>
-    <div class="box">
-        <a style="text-decoration: none;" href="breakfast.html">
+    <div class="box" >
+        <a class="boxes" style="text-decoration: none;" href="breakfast.html">
     <div class="box1">
-        <p id="b">Breakfast</p>
+        <p id="b" class="Topics">Breakfast</p>
 
     </div>
 </a>
 
-<a style="text-decoration: none;" href="lunch.html">
+<a class="boxes" style="text-decoration: none;" href="lunch.html">
     <div class="box2">
-        <p id="b">Lunch</p>
+        <p id="b" class="Topics">Lunch</p>
 
     </div>
 </a>
 
-<a style="text-decoration: none;" href="dinner.html">
+<a class="boxes" style="text-decoration: none;" href="dinner.html">
     <div class="box3">
-        <p id="b">Dinner</p>
+        <p id="b" class="Topics">Dinner</p>
 
     </div>
-</a>
+    </a>
 
-<a style="text-decoration: none;" href="colddrinks.html">
+<a class="boxes" style="text-decoration: none;" href="colddrinks.html">
     <div class="box4">
-        <p id="b">Cold Drinks</p>
+        <p id="b" class="Topics">Cold Drinks</p>
 
     </div>
 </a>
 
-<a style="text-decoration: none;" href="hotdrinks.html">
+<a class="boxes" style="text-decoration: none;" href="hotdrinks.html">
     <div class="box5">
-        <p id="b">Hot Drinks</p>
+        <p id="b" class="Topics">Hot Drinks</p>
 
     </div>
 </a>
 
-<a style="text-decoration: none;" href="deserts.html">
+<a class="boxes" style="text-decoration: none;" href="deserts.html">
     <div class="box6">
-        <p id="b">Deserts</p>
+        <p id="b" class="Topics">Deserts</p>
 
     </div>
 </a>
 
 </div>
+<script>
+    const searchFun = () => {
+        let filter = document.getElementById('search_bar').value.toUpperCase();
+        
+        let topic = document.getElementsByClassName('Topics');
+
+        let boxes = document.getElementsByClassName('boxes');
+
+       
+
+        for(var i=0;i<topic.length;i++){
+            
+            let ele = topic[i].textContent;
+
+            if(ele){
+                if(ele.toUpperCase().indexOf(filter) > -1){
+                    boxes[i].style.display = "";                    
+                }
+                else{
+                    boxes[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
 </body>
 </html>
