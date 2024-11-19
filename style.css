@@ -16,6 +16,7 @@ body, html {
   position: relative;
 }
 
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -191,6 +192,7 @@ footer {
   }
 /* Carousel Styles */
 #carousel {
+  
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -246,7 +248,10 @@ footer {
 
   .category-card {
     padding: 10px; /* Add more padding for better visual space */
-    font-size: 1em; /* Increase text size */
+    font-size: 1.2em; /* Increase text size */
+    border-radius: 13%;
+    font-weight: bold;
+
   }
 
   
@@ -359,3 +364,22 @@ footer {
   background-color: #800000;
 }
 
+@media (min-width: 769px) {
+  #carousel {
+    display: none; /* Hides the carousel section */
+  }
+}
+@media (max-width: 500px){
+ 
+  .category-card {
+    width: 265px; /* Increased box size for laptops */
+    margin-left: -9px;
+  }
+
+  .category-card img {
+    width: 100%; /* Makes the image responsive within the box */
+    max-width: 180px; /* Ensures the image stays inside the box */
+    height: 176px;
+    margin-bottom: 10px;
+  } 
+}
