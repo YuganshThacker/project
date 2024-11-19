@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,96 +8,94 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/01da381823.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
-    <div id="header">
+<body>
+    <!-- Header Section -->
+    <header id="header">
         <div class="container">
-            <nav>
-                <img src="images/menu.icon.png" class="logo" alt="Menu Logo" style="width: 50px; height: auto;">
-                <h1  style="margin-left: 6px;">Menu</h1>
-                <ul>
-                    <i id="search_button" style="color: beige;" class="fa-solid fa-magnifying-glass"></i>
-                    <i id="menu_button"style="color: beige;" class="fa-solid fa-bars"></i>
+            <nav class="main-nav">
+                <div class="logo-container">
+                    <img src="images/menulogo.png" class="logo" alt="Menu Logo">
+                    <h1>Menu</h1>
+                </div>
+                <ul class="icons">
                    
+                    <li><i class="fa-solid fa-bell" title="Notifications"></i></li>
+                  <a href="cart.html">  <li><i class="fa-solid fa-cart-shopping" title="Cart"></i></li></a>
                 </ul>
             </nav>
-            
-            <nav class="nav2">
-                <img id="table" src="images/table.png" alt="table">
-                <p id="table2">Table no</p>
-                <input type="text" id="search_bar" placeholder="search time..." onkeyup="searchFun()">
-            </nav>
+        </div>
+    </header>
+
+    <div class="barmobile">
+        <div class="search-barmobile">
+            <input type="text" placeholder="Search...">
+           <div class="search"> <button><i class="fa-solid fa-magnifying-glass"></i></button></div>
         </div>
     </div>
-    <h2 id="id">Categories</h2>
-    <div class="box" >
-        <a class="boxes" style="text-decoration: none;" href="breakfast.html">
-    <div class="box1">
-        <p id="b" class="Topics">Breakfast</p>
+    
+    <!-- Carousel Section -->
+    <section id="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="images/thepla.webp" alt="Delicious Food 1">
+                <img src="images/dinner.jpg" alt="Delicious Food 2">
+                <img src="images/hotdrink.jpg" alt="Delicious Food 3">
+                <img src="images/colddrink.jpg" alt="Delicious Food 4">
+                <img src="images/desert.jpg" alt="Delicious Food 4">
+            </div>
+        </div>
+    </section>
 
-    </div>
-</a>
+    <!-- Categories Section -->
+    <main>
+        <h2 id="categories-heading">Categories</h2>
+        <div class="categories">
+            <a href="breakfast.html" class="category-card">
+                <div>
+                    <div class="cards"><img src="images/thepla.webp" alt="Breakfast"></div>
+                    <p>Breakfast</p>
+                </div>
+            </a>
+            <a href="lunch.html" class="category-card">
+                <div>
+                    <div class="cards"><img src="images/lunch.jpg" alt="Lunch"></div>
+                    <p>Lunch</p>
+                </div>
+            </a>
+            <a href="dinner.html" class="category-card">
+                <div>
+                    <div class="cards"><img src="images/dinner.jpg" alt="Dinner"></div>
+                    <p>Dinner</p>
+                </div>
+            </a>
+            <a href="colddrinks.html" class="category-card">
+                <div>
+                    <div class="cards"><img src="images/colddrink.jpg" alt="Cold Drinks"></div>
+                    <p>Cold Drinks</p>
+                </div>
+            </a>
+            <a href="hotdrinks.html" class="category-card">
+                <div>
+                    <div class="cards"><img src="images/hotdrink.jpg" alt="Hot Drinks"></div>
+                    <p>Hot Drinks</p>
+                </div>
+            </a>
+            <a href="deserts.html" class="category-card">
+                <div>
+                    <div class="cards"><img src="images/desert.jpg" alt="Deserts"></div>
+                    <p>Deserts</p>
+                </div>
+            </a>
+        </div>
+    </main>
 
-<a class="boxes" style="text-decoration: none;" href="lunch.html">
-    <div class="box2">
-        <p id="b" class="Topics">Lunch</p>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Dine-in. All rights reserved.</p>
+    </footer>
 
-    </div>
-</a>
-
-<a class="boxes" style="text-decoration: none;" href="dinner.html">
-    <div class="box3">
-        <p id="b" class="Topics">Dinner</p>
-
-    </div>
-    </a>
-
-<a class="boxes" style="text-decoration: none;" href="colddrinks.html">
-    <div class="box4">
-        <p id="b" class="Topics">Cold Drinks</p>
-
-    </div>
-</a>
-
-<a class="boxes" style="text-decoration: none;" href="hotdrinks.html">
-    <div class="box5">
-        <p id="b" class="Topics">Hot Drinks</p>
-
-    </div>
-</a>
-
-<a class="boxes" style="text-decoration: none;" href="deserts.html">
-    <div class="box6">
-        <p id="b" class="Topics">Deserts</p>
-
-    </div>
-</a>
-
-</div>
-<script>
-    const searchFun = () => {
-        let filter = document.getElementById('search_bar').value.toUpperCase();
-        
-        let topic = document.getElementsByClassName('Topics');
-
-        let boxes = document.getElementsByClassName('boxes');
-
-       
-
-        for(var i=0;i<topic.length;i++){
-            
-            let ele = topic[i].textContent;
-
-            if(ele){
-                if(ele.toUpperCase().indexOf(filter) > -1){
-                    boxes[i].style.display = "";                    
-                }
-                else{
-                    boxes[i].style.display = "none";
-                }
-            }
-        }
-    }
-</script>
+    <script src="script.js"></script>
 </body>
+
 </html>
